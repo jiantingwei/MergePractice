@@ -1,0 +1,47 @@
+body {
+    text-align: center;
+    background-color:gray;
+}
+#chsmain{
+    background-color: gainsboro;
+    
+}
+#ch1{
+    color: brown
+}
+#chsdiv{
+    background-color: blanchedalmond;
+    opacity: 0.85;
+    border-radius:20%;
+}
+li{
+    text-align:left;
+    align-content: center;
+    color: brown
+        
+}
+#chsfoot{
+    background-color:aliceblue;
+    
+}
+#foodbtn{
+    /*-webkit-transition-duration: 0.4s;  Safari */
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 20px;
+    color: white;
+    background-color:red;
+    transition-duration: 0.4s;
+    border-radius: 12px;
+}
+#foodbtn:hover {
+    font-size: 24px;
+     border-radius: 12px;
+    background-color:red; /* Green */
+    color: white;
+}
+#foodbtn:active {
+  background-color: #FF4D00;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}

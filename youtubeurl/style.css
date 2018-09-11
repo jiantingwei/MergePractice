@@ -1,0 +1,31 @@
+body {
+    text-align: center;
+}
+h2{
+    height: 32px;
+    color: azure;
+}
+h1{
+    color: oldlace;
+}
+#playButton{
+    /*-webkit-transition-duration: 0.4s;  Safari */
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 20px;
+    color: white;
+    background-color:skyblue;
+    transition-duration: 0.4s;
+    border-radius: 12px;
+}
+#playButton:hover {
+    font-size: 24px;
+     border-radius: 12px;
+    background-color:red; /* Green */
+    color: white;
+}
+#playButton:active {
+  background-color: #FF4D00;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
