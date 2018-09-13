@@ -15,11 +15,11 @@ function getLightSwitchStatus(){
             $("h1").text("電燈狀態:"+msg[0].light_switch);
             if(msg[0].light_switch=="開"){
                 document.getElementById("swh").checked = true
-              $("img").attr("src","../assets/img/azuline02.png");
+              $("img").attr("src","smarthome/img/lighton.png");
                 
             }else{
                 document.getElementById("swh").checked = false
-                $("img").attr("src","../assets/img/goruli.png")
+                $("img").attr("src","smarthome/img/lightoff.png")
                 
             }
         }
@@ -53,10 +53,10 @@ function updateswitch() {
     thisqs.light_name="main";
     if(document.getElementById("swh").checked == true){
         thisqs.light_switch="開";
-        $("img").attr("src","../assets/img/azuline02.png");
+        $("img").attr("src","smarthome/img/lighton.png");
         //console.log(thisqs.light_switch);
     }else{thisqs.light_switch="關";
-          $("img").attr("src","../assets/img/goruli.png")
+          $("img").attr("src","smarthome/img/lightoff.png")
          //console.log(thisqs.light_switch);
          }
    
