@@ -54,10 +54,12 @@ function updateswitch() {
     if(document.getElementById("swh").checked == true){
         thisqs.light_switch="開";
         $("img").attr("src","smarthome/img/lighton.png");
+        $("h1").text("電燈狀態:開")
         //console.log(thisqs.light_switch);
     }else{thisqs.light_switch="關";
           $("img").attr("src","smarthome/img/lightoff.png")
          //console.log(thisqs.light_switch);
+          $("h1").text("電燈狀態:關")
          }
    
     $.ajax({url:"https://sheetdb.io/api/v1/5b960cdbd16f8/light_name/main",type: "PUT",dataType: "json",data:{data:[thisqs]}
