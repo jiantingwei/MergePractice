@@ -1,0 +1,152 @@
+
+#ass{
+    
+    background-image: url(images/windmill-clip.png);
+    
+    margin: auto;
+}
+#ass2{
+    background: yellow;
+    box-shadow: 10px 15px 5px #888888;
+    border-radius: 50%;
+    background-color:yellow;
+    border: 2px solid lightyellow;
+    box-shadow: 10px 10px 50px lightyellow;
+    width: 80px;
+    height: 80px;
+    transform: scale(1);
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    z-index: 2;
+}
+/*太陽變大*/
+#ass2:hover{
+    background: yellow;
+    box-shadow: 10px 15px 5px #888888;
+    border-radius: 50%;
+    background-color:yellow;
+    border: 2px solid lightyellow;
+    box-shadow: 10px 10px 50px lightyellow;
+    width: 80px;
+    height: 80px;
+    animation: sunsc 1s  1  forwards;
+    position: relative;
+    top: 100px;
+    left: 100px;
+    z-index: 2;
+}
+@keyframes sunsc {
+    from  {transform:scale(1);  }
+    to {transform:scale(2.5) ;}
+}
+#bird{
+    background-image: url(images/bird.png);
+    width: 100px;
+    height: 100px;
+    background-size: 100px 100px ;
+    background-repeat:no-repeat;
+    position:absolute;
+    top: 25%;
+    left: 12% ;
+    z-index: 5;
+    /*動畫變慢在停*/
+    animation-name: birdmv  ;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    z-index: 6;
+}
+
+@keyframes birdmv {
+    0%   { top: 25%; left: 0% ;opacity: 1;}
+    75%     {top: 25%; left: 80% ;opacity: 1;}
+    100% { left:90%;/*transform: rotate(360deg);*/opacity: 0; }
+}
+#birdnest{
+     background-image: url(images/nest.png);
+    width: 100px;
+    height: 100px;
+    background-size: 100px 100px ;
+    background-repeat:no-repeat;
+    position:absolute;
+    top: 80%;
+    left: 150px;
+    
+    
+}
+#back1{
+    background-image: url(images/grass_blue_sky_background.jpg);
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    background-size: auto;
+    z-index: 2;
+    
+}
+#back2{
+    background-image: url(images/windmill-clip.png);
+        width: 100px;
+    height: 100px;
+    background-size: 100px 100px ;
+    background-repeat:no-repeat;
+    transform: scale(2.5);
+    position:absolute;
+    /*動畫不會變慢在停開始*/
+    animation: cliro 1s infinite linear;
+    top: 28%;
+    left: 720px ;
+    z-index: 7;
+}
+@keyframes cliro {
+    from  {transform:scale(2.5)  rotate(0deg);}
+    to {transform:scale(2.5) rotate(360deg);}
+}
+#back3{
+    background-image: url(images/lookout_tower.png);
+    width: 120px;
+    height: 100px;
+    background-size: 100px 100px ;
+    background-repeat:no-repeat;
+    position:inherit;
+    transform: scale(4);
+    top: 40%;
+    left: 750px ;
+    z-index: 6;
+}
+
+#back5{
+    background-image: url(images/ft3rail.png);
+    width: 400px;
+    height: 100px;
+    background-size: 100px 100px ;
+    background-repeat:repeat-x;
+    position:relative;
+    transform: scale(2);
+    top: 75%;
+    left: 250px ;
+    overflow: hidden;
+    
+}
+#back4{
+    background-image: url(images/cow.png);
+    width: 100px;
+    height: 100px;
+    background-size: 100px 100px ;
+    background-repeat:no-repeat;
+    position:absolute;
+    transform: scale(2);
+    top: 70%;
+    left: 300px ;
+    animation-name: cowmv  ;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    }
+@keyframes cowmv {
+    0%   { top: 70%; left: 100px ; transform:scale(2.5) scaleX(-1); }
+    50%  { top: 70%; left: 500px ;transform:scale(2.5) scaleX(-1);}
+    75% { left:50%;/*transform: rotate(360deg);*/transform:scale(2.5) scaleX(1);}
+    100%{ top: 70%; left: 100px ;transform:scale(2.5) scaleX(1);}
+}
