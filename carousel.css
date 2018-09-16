@@ -124,7 +124,7 @@ body {
     color: white;
 }
 #whitefont{
-    color: white;
+    color:azure;
 }
 #fgoimg{
 background-image:  url("assets/img/starblue.jpg");
@@ -133,3 +133,18 @@ background-image:  url("assets/img/starblue.jpg");
 #mainrole{
     width: 90%;
   }
+#azurtitle{
+    width: 100%;
+}
+#azurtitle{
+    width: 100%;
+    color: white;
+}
+#azurpicdiv{
+    margin: auto;
+}
+#azur{
+    width: 100%;
+    
+    overflow:hidden;
+}
